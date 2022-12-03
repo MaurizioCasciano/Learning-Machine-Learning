@@ -8,7 +8,8 @@ tasks:
       - pip install -r requirements.txt
   download-data:
     cmds:
-      - wget -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/train-images-idx3-ubyte.gz
-      - wget -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/t10k-images-idx3-ubyte.gz
-      - wget -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/train-labels-idx1-ubyte.gz
-      - wget -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/t10k-labels-idx1-ubyte.gz
+      - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/train-images-idx3-ubyte.gz
+      - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/t10k-images-idx3-ubyte.gz
+      - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/train-labels-idx1-ubyte.gz
+      - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/t10k-labels-idx1-ubyte.gz
+      - wget --no-clobber -P data/Sarcasm https://storage.googleapis.com/laurencemoroney-blog.appspot.com/sarcasm.json
