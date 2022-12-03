@@ -323,3 +323,6 @@ poetry.toml
 
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jetbrains+all,eclipse
+
+data
+!data/.gitkeep
