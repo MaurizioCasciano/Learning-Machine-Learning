@@ -13,3 +13,13 @@ tasks:
       - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/train-labels-idx1-ubyte.gz
       - wget --no-clobber -P data/FashionMNIST/raw https://github.com/zalandoresearch/fashion-mnist/raw/master/data/fashion/t10k-labels-idx1-ubyte.gz
       - wget --no-clobber -P data/Sarcasm https://storage.googleapis.com/laurencemoroney-blog.appspot.com/sarcasm.json
+  download-roberta-data:
+    cmds:
+      - echo "Downloading RoBERTa vocabulary"
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-vocab.json
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-vocab.json
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-mnli-vocab.json
+      - echo "Downloading RoBERTa merges"
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-merges.txt
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-merges.txt
+      - wget --no-clobber -P data/roberta https://s3.amazonaws.com/models.huggingface.co/bert/roberta-large-mnli-merges.txt
